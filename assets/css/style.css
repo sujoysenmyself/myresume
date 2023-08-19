@@ -1300,10 +1300,9 @@ a.fab-action.fab-action-5 {
 }
 
 
-/* test */
+/* Skills Progress Bar */
 
-
-.skills .progress .skill .kk{
+.skills .progress .skill .progress_bar_margin{
   float: left;
   }
 
@@ -1312,8 +1311,7 @@ a.fab-action.fab-action-5 {
   }
 
 
-
-/* test 2 */
+/* Scroll Bar */
 
 /* For Chrome, Safari, and newer versions of Edge */
 ::-webkit-scrollbar {
@@ -1333,6 +1331,16 @@ a.fab-action.fab-action-5 {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #149ddd; /* color of the scrollbar handle on hover */
+}
+
+
+/* Skills Logo */
+i.fa.fa-2x.fa-html5.progress_bar_margin {
+  color:#ff6347;
+}
+
+i.fa.fa-2x.fa-wordpress {
+  color:#207196;
 }
 
 
