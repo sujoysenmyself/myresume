@@ -1274,6 +1274,11 @@ section {
   bottom: -1rem;
 }
 
+.fab-wheel .fab-action-5 {
+  top: 11.6rem;
+  left: 2rem;
+}
+
 a.fab-action.fab-action-1 {
   color: white !important;
 }
