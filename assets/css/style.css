@@ -1295,4 +1295,46 @@ a.fab-action.fab-action-4 {
   color: white !important;
 }
 
+a.fab-action.fab-action-5 {
+  color: white !important;
+}
+
+
+/* test */
+
+
+.skills .progress .skill .kk{
+  float: left;
+  }
+
+  .progress-bar-wrap {
+    margin-top: 10px;
+  }
+
+
+
+/* test 2 */
+
+/* For Chrome, Safari, and newer versions of Edge */
+::-webkit-scrollbar {
+  width: 6px; /* width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #040b14; /* color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #149ddd; /* color of the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #149ddd; /* color of the scrollbar handle on hover */
+}
+
+
+
 
