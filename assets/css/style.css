@@ -247,7 +247,7 @@ h6 {
 }
 
 #hero:before {
-  content: "";
+  /* content: ""; */
   background: rgba(5, 13, 24, 0.3);
   position: absolute;
   bottom: 0;
@@ -1117,6 +1117,7 @@ section {
   position: fixed;
   bottom: 5rem;
   right: 2rem;
+  z-index: 999;
 }
 .fab-checkbox {
   display: none;
