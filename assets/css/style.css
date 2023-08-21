@@ -1335,19 +1335,15 @@ a.fab-action.fab-action-5 {
 }
 
 
-/* Skills Logo */
-i.fa.fa-2x.fa-html5.progress_bar_margin {
-  color:#ff6347;
+/* Skills */
+
+.skills_percentage{
+  float: right;
 }
 
-i.fa.fa-2x.fa-wordpress {
-  color:#207196;
+.tt{
+  font-weight: 600;
 }
-
-i.fa.fa-css3.fa-2x.progress_bar_margin {
-  color:#254bdd
-}
-
 
 
 
