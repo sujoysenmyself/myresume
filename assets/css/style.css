@@ -1341,8 +1341,21 @@ a.fab-action.fab-action-5 {
   float: right;
 }
 
-.tt{
-  font-weight: 600;
+/* Navbar Button */
+
+i.fa.fa-download.navbar_download {
+  font-size:18px;
+  color: white !important;
+}
+
+button.btn.btn-primary.navbar_button_download {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+button.btn.btn-success.navbar_button_download {
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 
