@@ -1540,3 +1540,21 @@ span.details_link a{
 
 
 
+/* Navbar Button */
+@media (max-width: 768px) {
+  button.btn.btn-success.navbar_button_download.button-margin {
+    margin: 0px;
+  }
+}
+
+@media (min-width: 769px) {
+  button.btn.btn-success.navbar_button_download.button-margin {
+    margin-left: 10px;
+  }
+}
+
+
+
+
+
+
