@@ -66,6 +66,10 @@ h6 {
   opacity: 1;
 }
 
+a.back-to-top.d-flex.align-items-center.justify-content-center.active {
+  bottom:7rem;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -1115,7 +1119,7 @@ section {
 
 .fab-wrapper {
   position: fixed;
-  bottom: 10rem;
+  bottom: 13rem;
   right: 2rem;
   z-index: 999;
 }
