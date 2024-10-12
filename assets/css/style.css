@@ -1115,7 +1115,7 @@ section {
 
 .fab-wrapper {
   position: fixed;
-  bottom: 5rem;
+  bottom: 10rem;
   right: 2rem;
   z-index: 999;
 }
