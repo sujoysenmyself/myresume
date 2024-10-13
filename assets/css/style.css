@@ -390,6 +390,16 @@ section {
   cursor: pointer;
 }
 
+button.close {
+  border:none;
+}
+
+img.portfolio_manage.img-fluid {
+  margin:5px;
+  border:4px solid #0d6efd;
+  padding:5px
+}
+
 
 /*--------------------------------------------------------------
 # Facts
