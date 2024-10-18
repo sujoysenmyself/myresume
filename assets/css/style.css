@@ -349,6 +349,53 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Popup Box
+--------------------------------------------------------------*/
+/* Style for the custom alert box */
+#customAlert {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #040B14;
+  color: white;
+  padding: 20px;
+  border: 1px solid #040B14;
+  border-radius: 5px;
+  /* width: 300px; */
+  z-index: 1000;
+  text-align: center;
+}
+
+/* Style for the close button */
+#customAlert .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile style popup box */
+@media (max-width: 768px) {
+#customAlert {
+  width:300px;
+  }
+}
+
+/* Hide for mobile */
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+
+
+/*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about .content h3 {
