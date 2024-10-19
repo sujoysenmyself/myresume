@@ -412,6 +412,29 @@ button.button_design {
 }
 
 
+/* Close Button Style */
+.close-btn {
+  font-size: 20px;
+  color: #000; /* Button text color */
+  background-color: #19181a; /* Light background color */
+  border: none;
+  border-radius: 50%; /* Makes the button circular */
+  padding: 10px; /* Space around the icon */
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-btn:hover {
+  background-color: #ddd; /* Darker on hover */
+}
+
 
 /*--------------------------------------------------------------
 # About
