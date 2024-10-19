@@ -386,11 +386,29 @@ section {
   }
 }
 
-/* Hide for mobile */
+/* Hide for mobile, tablet and desktop */
 @media (max-width: 768px) {
   .hide-on-mobile {
     display: none;
   }
+}
+
+@media (max-width: 768px) {
+  .for_desktop_tablet {
+    display: none !important;
+  }
+}
+
+@media (min-width: 769px) {
+.for_mobile {
+  display: none !important;
+  }
+}
+
+
+/* Button Style */
+button.button_design {
+  border-radius:50%;
 }
 
 

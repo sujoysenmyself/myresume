@@ -220,7 +220,8 @@
         <p class="mb-3 hide-on-mobile">Hi, I'm Sujoy Sen, a professional WordPress developer. If you're looking for custom website development, plugin creation, or optimization for your business, I'm here to help!</p>
         <p class="mb-4">Get in touch today, and let's discuss how I can bring your project to life.</p>
         
-        <div class="modal-body d-flex flex-column flex-md-row justify-content-between gap-2">
+        <!-- For Desktop and Tablet -->
+        <div class="modal-body d-flex justify-content-between gap-2 for_desktop_tablet">
           <a href="mailto:sujoysenjitu1994@gmail.com">
           <button class="btn btn-primary mb-2 mb-md-0">
             <i class="bi bi-envelope-fill"></i> Email
@@ -228,17 +229,39 @@
           </a>
         
           <a href="https://wa.me/919046158841">
-          <button class="btn btn-primary mb-2 mb-md-0">
+          <button class="btn btn-success mb-2 mb-md-0">
             <i class="bi bi-whatsapp"></i> WhatsApp
           </button>
           </a>
         
           <a href="tel:919046158841">
-          <button class="btn btn-primary mb-2 mb-md-0">
-            <i class="bi bi-telephone-fill"></i> Call
+            <button class="btn btn-danger mb-2 mb-md-0">
+              <i class="bi bi-telephone-fill"></i> Call
+            </button>
+          </a>
+        
+        </div>
+
+        <!-- For Mobile -->
+        <div class="modal-body d-flex justify-content-between gap-2 for_mobile">
+          <a href="mailto:sujoysenjitu1994@gmail.com">
+          <button class="btn btn-primary mb-2 mb-md-0 button_design">
+            <i class="bi bi-envelope-fill"></i>
           </button>
           </a>
-        </div>
+        
+          <a href="https://wa.me/919046158841">
+          <button class="btn btn-success mb-2 mb-md-0 button_design">
+            <i class="bi bi-whatsapp"></i>
+          </button>
+          </a>
+        
+          <a href="tel:919046158841">
+          <button class="btn btn-danger mb-2 mb-md-0 button_design">
+            <i class="bi bi-telephone-fill"></i>
+          </button>
+          </a>
+        </div> 
       </div>
       
     <!-- End Popup Box -->
