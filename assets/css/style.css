@@ -94,7 +94,7 @@ a.back-to-top.d-flex.align-items-center.justify-content-center.active {
   border: 8px solid #040b14 !important;
 }
 
-#header .profile h1 {
+#header .profile p{
   font-size: 24px;
   margin: 0;
   padding: 0;
@@ -104,8 +104,8 @@ a.back-to-top.d-flex.align-items-center.justify-content-center.active {
   font-family: "Poppins", sans-serif;
 }
 
-#header .profile h1 a,
-#header .profile h1 a:hover {
+#header .profile p a,
+#header .profile p a:hover {
   color: #fff;
   text-decoration: none;
 }
