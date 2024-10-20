@@ -433,6 +433,7 @@ button.button_design {
 
 .close-btn:hover {
   background-color: #ddd; /* Darker on hover */
+  color: #000 !important;
 }
 
 
