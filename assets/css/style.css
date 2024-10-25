@@ -1480,6 +1480,15 @@ button.btn.btn-success.navbar_button_download {
 }
 
 
+/* Case Study */
+p.case_study_sub_head {
+  background: linear-gradient(90deg, #0B5ED7, #ffffff);
+  padding: 10px;
+  color: white;
+}
+
+
+
 /* About Us */
 span.details_link a{
   color:#000000;
