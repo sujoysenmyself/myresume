@@ -1494,6 +1494,30 @@ p.case_study_sub_head {
 }
 
 
+/* Testimonial */
+.testimonial-image {
+  width: 100%; /* Default for larger screens */
+}
+
+.testimonial_sub_line {
+  color:#00000099;
+  }
+
+.testimonial-space-manage{
+  margin: 0px;
+}  
+
+@media (max-width: 576px) {
+  .testimonial-image {
+    width: 40%; /* Set width to 40% on mobile */
+    margin-bottom: 30px; /* Center the image */
+  }
+}
+
+
+
+
+
 
 /* About Us */
 span.details_link a{
