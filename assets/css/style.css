@@ -1198,7 +1198,7 @@ img.portfolio_manage.img-fluid {
 --------------------------------------------------------------*/
 section#footer {
   background-color: #212431;
-  padding: 0px;
+  padding: 1.5rem 0rem 1.5rem 0rem;
 }
 
 .footer-icon{
@@ -1207,6 +1207,10 @@ section#footer {
 
 .footer-icon-space{
   padding-right: 0.5rem;
+}
+
+.fa.fa-phone.footer-icon {
+  color:white;
 }
 
 
