@@ -255,14 +255,27 @@ p.text-light{
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Video Styling */
+#hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  object-fit: cover; /* Ensures the video covers the entire area */
 }
 
 #hero:before {
-  /* content: ""; */
-  background: rgba(5, 13, 24, 0.3);
+  content: "";
+  background: rgba(5, 13, 24, 0.3); /* Add a dark overlay for better text visibility */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -271,10 +284,11 @@ p.text-light{
   z-index: 1;
 }
 
-#hero .hero-container {
+.hero-container {
   position: relative;
-  z-index: 2;
+  z-index: 2; /* Ensures content is on top of the video and overlay */
   min-width: 300px;
+  text-align: center;
 }
 
 #hero h1 {
@@ -311,12 +325,13 @@ p.text-light{
     line-height: 36px;
   }
 
-  #hero h2 {
+  #hero p {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Sections General
