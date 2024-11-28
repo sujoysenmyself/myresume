@@ -1715,6 +1715,24 @@ span.details_link a{
 
 
 
+/*--------------------------------------------------------------
+# Logo
+--------------------------------------------------------------*/
+.logo-container {
+  position: absolute;
+  top: 10px;
+  z-index: 1;
+  width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+  .logo-container {
+    left: 10px;
+  }
+}
+
+
+
 
 
 
