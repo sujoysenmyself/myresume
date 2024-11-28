@@ -1731,6 +1731,16 @@ span.details_link a{
   }
 }
 
+img.sujoy_logo {
+  height:80px;
+}
+
+@media screen and (max-width: 576px) {
+  img.sujoy_logo {
+    height:60px;
+  }
+}
+
 
 
 
