@@ -1742,6 +1742,32 @@ img.sujoy_logo {
 }
 
 
+/* For laptop screen */
+@media (max-width: 1366px) {
+  .show_button_width {
+    width:20%;
+  }
+}
+
+
+/* Tablets in portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .show_button_width {
+    width:30%;
+  }    
+}
+
+
+
+/* Mobile devices in portrait mode */
+@media (max-width: 767px) {
+  .show_button_width {
+    width:50%;
+  }    
+}
+
+
+
 
 
 
