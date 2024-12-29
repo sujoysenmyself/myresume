@@ -1,881 +1,1011 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
 
     <title>Show More</title>
   </head>
   <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <div class="container-fluid d-flex align-items-center justify-content-between">
-          <!-- Logo on the Left -->
-          <a class="navbar-brand" href="#">
-            <img src="./assets/logo/sujoy_logo.png" style="max-width: 50px;" />
-          </a>
-      
-          <!-- Center Navigation Items (Desktop Only) -->
-          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Back To Home <span class="sr-only">(current)</span></a>
-              </li>
-            </ul>
-          </div>
-      
-          <!-- Toggle Button and LinkedIn Icon on the Right -->
-          <div class="d-flex align-items-center">
-            <!-- LinkedIn Icon (Visible on Mobile and Desktop) -->
-            <a href="#" class="mr-3">
-              <img src="./assets/show_more_navbar/phone_call.gif" alt="phone" style="max-width: 30px;" />
-            </a>
-            <a href="#" class="mr-3">
-              <img src="./assets/show_more_navbar/linkedin.gif" alt="linkedin" style="max-width: 40px;" />
-            </a>
-            <a href="#" class="mr-3">
-              <img src="./assets/show_more_navbar/whatsapp.gif" alt="whatsapp" style="max-width: 40px;" />
-            </a>
-            <a href="#" class="mr-3">
-              <img src="./assets/show_more_navbar/email.gif" alt="email" style="max-width: 40px;" />
-            </a>
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #1a293e"
+    >
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between"
+      >
+        <!-- Logo on the Left -->
+        <a class="navbar-brand" href="#">
+          <img src="./assets/logo/sujoy_logo.png" style="max-width: 50px" />
+        </a>
 
-            <!-- Toggle Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
+        <!-- Center Navigation Items (Desktop Only) -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a
+                class="nav-link"
+                href="#"
+                style="
+                  color: #ffffff;
+                  border: 2px solid white;
+                  border-radius: 5px;
+                "
+                >Back To Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Resume & Cover Letter
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Download Resume</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Download Cover Letter</a>
+              </div>
+            </li>
+          </ul>
         </div>
-      </nav>
-      
-      
-      
-      
-      
+
+        <!-- Toggle Button and LinkedIn Icon on the Right -->
+        <div class="d-flex align-items-center">
+          <!-- LinkedIn Icon (Visible on Mobile and Desktop) -->
+          <a href="#" class="mr-3">
+            <img
+              src="./assets/show_more_navbar/phone_call.gif"
+              alt="phone"
+              style="max-width: 30px"
+            />
+          </a>
+          <a href="#" class="mr-3">
+            <img
+              src="./assets/show_more_navbar/linkedin.gif"
+              alt="linkedin"
+              style="max-width: 40px"
+            />
+          </a>
+          <a href="#" class="mr-3">
+            <img
+              src="./assets/show_more_navbar/whatsapp.gif"
+              alt="whatsapp"
+              style="max-width: 40px"
+            />
+          </a>
+          <a href="#" class="mr-3">
+            <img
+              src="./assets/show_more_navbar/email.gif"
+              alt="email"
+              style="max-width: 40px"
+            />
+          </a>
+
+          <!-- Toggle Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
 
     <div class="container">
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="pills-website-tab" data-toggle="pill" href="#pills-website" role="tab" aria-controls="pills-website" aria-selected="true">Websites / Web Applications</a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a class="nav-link" id="pills-plugin-tab" data-toggle="pill" href="#pills-plugin" role="tab" aria-controls="pills-plugin" aria-selected="false">WordPress Plugins</a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a class="nav-link" id="pills-analytics-tab" data-toggle="pill" href="#pills-analytics" role="tab" aria-controls="pills-analytics" aria-selected="false">Data Analytics</a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a class="nav-link" id="pills-uiux-tab" data-toggle="pill" href="#pills-uiux" role="tab" aria-controls="pills-uiux" aria-selected="false">UI/UX Design</a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a class="nav-link" id="pills-case-study-tab" data-toggle="pill" href="#pills-case-study" role="tab" aria-controls="pills-case-study" aria-selected="false">Case Study</a>
-            </li>
-        </ul>
-        
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-website" role="tabpanel" aria-labelledby="pills-website-tab">
-              <div class="row">
-                <div class="col-12 col-md-4 col-lg-4">
-                  <!-- Button trigger modal -->
-                  <img
-                    src="../myresume/assets/img/Portfolio/travel_north_east.JPG"
-                    alt="Launch Modal"
-                    class="portfolio_manage img-fluid"
-                    data-toggle="modal"
-                    data-target="#travel_north_east_modal"
-                  />
-    
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="travel_north_east_modal"
-                    tabindex="-1"
-                    aria-labelledby="travel_north_east_modal_Label"
-                    aria-hidden="true"
-                  >
-                    <div
-                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-                    >
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5
-                            class="modal-title"
-                            id="travel_north_east_modal_Label"
-                          >
-                            <a
-                              href="https://www.travelnortheast.in/"
-                              target="_blank"
-                              >Click Here To Visit</a
-                            >
-                          </h5>
-                          <button
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <img
-                            src="../myresume/assets/img/Portfolio/Full Screen/travelnortheast.png"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <div class="modal-footer d-flex justify-content-center">
-                          <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="col-12 col-md-4 col-lg-4">
-                  <!-- Button trigger modal -->
-                  <img
-                    src="../myresume/assets/img/Portfolio/trusaloons.JPG"
-                    alt="Launch Modal"
-                    class="portfolio_manage img-fluid"
-                    data-toggle="modal"
-                    data-target="#trusaloons_modal"
-                  />
-    
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="trusaloons_modal"
-                    tabindex="-1"
-                    aria-labelledby="trusaloons_modal_Label"
-                    aria-hidden="true"
-                  >
-                    <div
-                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-                    >
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="trusaloons_modal_Label">
-                            <a href="https://trusalon.in/" target="_blank"
-                              >Click Here To Visit</a
-                            >
-                          </h5>
-                          <button
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <img
-                            src="../myresume/assets/img/Portfolio/Full Screen/trusaloon.png"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <div class="modal-footer d-flex justify-content-center">
-                          <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="col-12 col-md-4 col-lg-4">
-                  <!-- Button trigger modal -->
-                  <img
-                    src="../myresume/assets/img/Portfolio/sunnylea_homes.JPG"
-                    alt="Launch Modal"
-                    class="portfolio_manage img-fluid"
-                    data-toggle="modal"
-                    data-target="#sunnylea_modal"
-                  />
-    
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="sunnylea_modal"
-                    tabindex="-1"
-                    aria-labelledby="sunnylea_modal_Label"
-                    aria-hidden="true"
-                  >
-                    <div
-                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-                    >
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="sunnylea_modal_Label">
-                            <a href="https://sunnyleahomes.ca/" target="_blank"
-                              >Click Here To Visit</a
-                            >
-                          </h5>
-                          <button
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <img
-                            src="../myresume/assets/img/Portfolio/Full Screen/sunnylea_homes.png"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <div class="modal-footer d-flex justify-content-center">
-                          <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="col-12 col-md-4 col-lg-4">
-                  <!-- Button trigger modal -->
-                  <img
-                    src="../myresume/assets/img/Portfolio/nissin_be.JPG"
-                    alt="Launch Modal"
-                    class="portfolio_manage img-fluid"
-                    data-toggle="modal"
-                    data-target="#nissin_modal"
-                  />
-    
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="nissin_modal"
-                    tabindex="-1"
-                    aria-labelledby="nissin_modal_Label"
-                    aria-hidden="true"
-                  >
-                    <div
-                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-                    >
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="nissin_modal_Label">
-                            <a href="https://www.nissin.be/" target="_blank"
-                              >Click Here To Visit</a
-                            >
-                          </h5>
-                          <button
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <img
-                            src="../myresume/assets/img/Portfolio/Full Screen/nissin_be.png"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <div class="modal-footer d-flex justify-content-center">
-                          <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="col-12 col-md-4 col-lg-4">
-                  <!-- Button trigger modal -->
-                  <img
-                    src="../myresume/assets/img/Portfolio/healthcare.JPG"
-                    alt="Launch Modal"
-                    class="portfolio_manage img-fluid"
-                    data-toggle="modal"
-                    data-target="#healthcare_modal"
-                  />
-    
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="healthcare_modal"
-                    tabindex="-1"
-                    aria-labelledby="healthcare_modal_Label"
-                    aria-hidden="true"
-                  >
-                    <div
-                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-                    >
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="healthcare_modal_Label">
-                            <a
-                              href="https://healthcare-marketing.vidushiinfotech.com/"
-                              target="_blank"
-                              >Click Here To Visit</a
-                            >
-                          </h5>
-                          <button
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <img
-                            src="../myresume/assets/img/Portfolio/Full Screen/heathcare.png"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <div class="modal-footer d-flex justify-content-center">
-                          <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="col-12 col-md-4 col-lg-4">
-                  <!-- Button trigger modal -->
-                  <img
-                    src="../myresume/assets/img/Portfolio/airplus.JPG"
-                    alt="Launch Modal"
-                    class="portfolio_manage img-fluid"
-                    data-toggle="modal"
-                    data-target="#airplus_modal"
-                  />
-    
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="airplus_modal"
-                    tabindex="-1"
-                    aria-labelledby="airplus_modal_Label"
-                    aria-hidden="true"
-                  >
-                    <div
-                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-                    >
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="airplus_modal_Label">
-                            <a href="https://www.airplus.be/" target="_blank"
-                              >Click Here To Visit</a
-                            >
-                          </h5>
-                          <button
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <img
-                            src="../myresume/assets/img/Portfolio/Full Screen/air_plus.png"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <div class="modal-footer d-flex justify-content-center">
-                          <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="pills-plugin" role="tabpanel" aria-labelledby="pills-plugin-tab">
-              <div class="row">
-                <div class="col-12 col-md-4 col-lg-4">
-                  <!-- Button trigger modal -->
-                  <img
-                    src="../myresume/assets/img/Portfolio/header_footer.jpeg"
-                    alt="Launch Modal"
-                    class="portfolio_manage img-fluid"
-                    data-toggle="modal"
-                    data-target="#header_footer_modal"
-                  />
-    
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="header_footer_modal"
-                    tabindex="-1"
-                    aria-labelledby="header_footer_modal_Label"
-                    aria-hidden="true"
-                  >
-                    <div
-                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-                    >
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="header_footer_modal_Label">
-                            <a
-                              href="https://github.com/sujoysenmyself/header-footer-insertion-wordpress-plugin/tree/dev-master?tab=readme-ov-file"
-                              target="_blank"
-                              >Click Here To Visit</a
-                            >
-                          </h5>
-                          <button
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <img
-                            src="../myresume/assets/img/Portfolio/Full Screen/header_footer_plugin.jpeg"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <div class="modal-footer d-flex justify-content-center">
-                          <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="col-12 col-md-4 col-lg-4">
-                  <!-- Button trigger modal -->
-                  <img
-                    src="../myresume/assets/img/Portfolio/social_media_float.jpeg"
-                    alt="Launch Modal"
-                    class="portfolio_manage img-fluid"
-                    data-toggle="modal"
-                    data-target="#social_media_float_modal"
-                  />
-    
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="social_media_float_modal"
-                    tabindex="-1"
-                    aria-labelledby="social_media_float_modal_Label"
-                    aria-hidden="true"
-                  >
-                    <div
-                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-                    >
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5
-                            class="modal-title"
-                            id="social_media_float_modal_Label"
-                          >
-                            <a
-                              href="https://github.com/sujoysenmyself/wordpress_plugin_social_media_icon_float?tab=readme-ov-file"
-                              target="_blank"
-                              >Click Here To Visit</a
-                            >
-                          </h5>
-                          <button
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <img
-                            src="../myresume/assets/img/Portfolio/Full Screen/social_media_float.png"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <div class="modal-footer d-flex justify-content-center">
-                          <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="pills-analytics" role="tabpanel" aria-labelledby="pills-analytics-tab">
-              <div class="row">
-                <div class="col-12 col-md-4 col-lg-4">
-                  <!-- Button trigger modal -->
-                  <img
-                    src="../myresume/assets/img/Portfolio/power_bi.png"
-                    alt="Launch Modal"
-                    class="portfolio_manage img-fluid"
-                    data-toggle="modal"
-                    data-target="#power_bi_modal"
-                  />
-    
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="power_bi_modal"
-                    tabindex="-1"
-                    aria-labelledby="power_bi_modal_Label"
-                    aria-hidden="true"
-                  >
-                    <div
-                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-                    >
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="power_bi_modal_Label">
-                            <a
-                              href="https://github.com/sujoysenmyself/power_bi_HR_Analytics?tab=readme-ov-file"
-                              target="_blank"
-                              >Click Here To Visit</a
-                            >
-                          </h5>
-                          <button
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <img
-                            src="../myresume/assets/img/Portfolio/Full Screen/power_bi_full.png"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <div class="modal-footer d-flex justify-content-center">
-                          <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="col-12 col-md-4 col-lg-4">
-                  <!-- Button trigger modal -->
-                  <img
-                    src="../myresume/assets/img/Portfolio/pandas.png"
-                    alt="Launch Modal"
-                    class="portfolio_manage img-fluid"
-                    data-toggle="modal"
-                    data-target="#pandas_modal"
-                  />
-    
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="pandas_modal"
-                    tabindex="-1"
-                    aria-labelledby="pandas_modal_Label"
-                    aria-hidden="true"
-                  >
-                    <div
-                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-                    >
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="pandas_modal_Label">
-                            <a
-                              href="https://github.com/sujoysenmyself/Hotel_Booking_Data_Analysis_By_Pandas?tab=readme-ov-file"
-                              target="_blank"
-                              >Click Here To Visit</a
-                            >
-                          </h5>
-                          <button
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <img
-                            src="../myresume/assets/img/Portfolio/Full Screen/pandas_full.png"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <div class="modal-footer d-flex justify-content-center">
-                          <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="pills-uiux" role="tabpanel" aria-labelledby="pills-uiux-tab">
-              <div class="row">
-                <div class="col-12 col-md-4 col-lg-4">
-                  <!-- Button trigger modal -->
-                  <img
-                    src="../myresume/assets/img/Portfolio/business_card_1.png"
-                    alt="Launch Modal"
-                    class="portfolio_manage img-fluid"
-                    data-toggle="modal"
-                    data-target="#business_card_1_modal"
-                  />
-    
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="business_card_1_modal"
-                    tabindex="-1"
-                    aria-labelledby="business_card_1_modal_Label"
-                    aria-hidden="true"
-                  >
-                    <div
-                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-                    >
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="business_card_1_modal_Label">
-                            <a
-                              href="./assets/img/Portfolio/Full Screen/business_card_1.png"
-                              target="_blank"
-                              >Click Here To Visit</a
-                            >
-                          </h5>
-                          <button
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <img
-                            src="../myresume/assets/img/Portfolio/Full Screen/business_card_1.png"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <div class="modal-footer d-flex justify-content-center">
-                          <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="col-12 col-md-4 col-lg-4">
-                  <!-- Button trigger modal -->
-                  <img
-                    src="../myresume/assets/img/Portfolio/business_card_2.png"
-                    alt="Launch Modal"
-                    class="portfolio_manage img-fluid"
-                    data-toggle="modal"
-                    data-target="#business_card_2_modal"
-                  />
-    
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="business_card_2_modal"
-                    tabindex="-1"
-                    aria-labelledby="business_card_2_modal_Label"
-                    aria-hidden="true"
-                  >
-                    <div
-                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-                    >
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="business_card_2_modal_Label">
-                            <a
-                              href="./assets/img/Portfolio/Full Screen/business_card_2.jpg"
-                              target="_blank"
-                              >Click Here To Visit</a
-                            >
-                          </h5>
-                          <button
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <img
-                            src="../myresume/assets/img/Portfolio/Full Screen/business_card_2.jpg"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <div class="modal-footer d-flex justify-content-center">
-                          <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="pills-case-study" role="tabpanel" aria-labelledby="pills-case-study-tab">
-              <div class="row">
-                <div class="col-12 col-md-3 col-lg-3">
-                  <p class="case_study_sub_head">Website Development</p>
-                  <img
-                    src="../myresume/assets/img/case_study/Website_Development_Case_Study.png"
-                    class="img-fluid"
-                  />
-                  <div class="d-flex justify-content-center mt-3">
-                    <a
-                      href="../myresume/assets/case_study_all/Website_Development.pdf"
-                      target="_blank"
-                      download
-                      class="btn btn-primary case_study_button_space"
-                    >
-                      Download
-                    </a>
-                  </div>
-                </div>
-                <div class="col-12 col-md-3 col-lg-3">
-                  <p class="case_study_sub_head">SEO Strategy</p>
-                  <img
-                    src="../myresume/assets/img/case_study/SEO_Strategy_Case_Study.png"
-                    class="img-fluid"
-                  />
-                  <div class="d-flex justify-content-center mt-3">
-                    <a
-                      href="../myresume/assets/case_study_all/SEO_Strategy.pdf"
-                      target="_blank"
-                      download
-                      class="btn btn-primary case_study_button_space"
-                    >
-                      Download
-                    </a>
-                  </div>
-                </div>
-                <div class="col-12 col-md-3 col-lg-3">
-                  <p class="case_study_sub_head">Client Colaboration</p>
-                  <img
-                    src="../myresume/assets/img/case_study/Client_Colaboration_Case_Study.png"
-                    class="img-fluid"
-                  />
-                  <div class="d-flex justify-content-center mt-3">
-                    <a
-                      href="../myresume/assets/case_study_all/Client_Colaboration.pdf"
-                      target="_blank"
-                      download
-                      class="btn btn-primary case_study_button_space"
-                    >
-                      Download
-                    </a>
-                  </div>
-                </div>
-                <div class="col-12 col-md-3 col-lg-3">
-                  <p class="case_study_sub_head">Data Analytics Insights</p>
-                  <img
-                    src="../myresume/assets/img/case_study/Data_Analytics_Insights_Case_Study.png"
-                    class="img-fluid"
-                  />
-                  <div class="d-flex justify-content-center mt-3">
-                    <a
-                      href="../myresume/assets/case_study_all/Data_Analytics_Insights.pdf"
-                      target="_blank"
-                      download
-                      class="btn btn-primary"
-                    >
-                      Download
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-    </div>
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            id="pills-website-tab"
+            data-toggle="pill"
+            href="#pills-website"
+            role="tab"
+            aria-controls="pills-website"
+            aria-selected="true"
+            >Websites / Web Applications</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-plugin-tab"
+            data-toggle="pill"
+            href="#pills-plugin"
+            role="tab"
+            aria-controls="pills-plugin"
+            aria-selected="false"
+            >WordPress Plugins</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-analytics-tab"
+            data-toggle="pill"
+            href="#pills-analytics"
+            role="tab"
+            aria-controls="pills-analytics"
+            aria-selected="false"
+            >Data Analytics</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-uiux-tab"
+            data-toggle="pill"
+            href="#pills-uiux"
+            role="tab"
+            aria-controls="pills-uiux"
+            aria-selected="false"
+            >UI/UX Design</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-case-study-tab"
+            data-toggle="pill"
+            href="#pills-case-study"
+            role="tab"
+            aria-controls="pills-case-study"
+            aria-selected="false"
+            >Case Study</a
+          >
+        </li>
+      </ul>
 
+      <div class="tab-content" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="pills-website"
+          role="tabpanel"
+          aria-labelledby="pills-website-tab"
+        >
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-4">
+              <!-- Button trigger modal -->
+              <img
+                src="../myresume/assets/img/Portfolio/travel_north_east.JPG"
+                alt="Launch Modal"
+                class="portfolio_manage img-fluid"
+                data-toggle="modal"
+                data-target="#travel_north_east_modal"
+              />
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="travel_north_east_modal"
+                tabindex="-1"
+                aria-labelledby="travel_north_east_modal_Label"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5
+                        class="modal-title"
+                        id="travel_north_east_modal_Label"
+                      >
+                        <a
+                          href="https://www.travelnortheast.in/"
+                          target="_blank"
+                          >Click Here To Visit</a
+                        >
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="../myresume/assets/img/Portfolio/Full Screen/travelnortheast.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-4">
+              <!-- Button trigger modal -->
+              <img
+                src="../myresume/assets/img/Portfolio/trusaloons.JPG"
+                alt="Launch Modal"
+                class="portfolio_manage img-fluid"
+                data-toggle="modal"
+                data-target="#trusaloons_modal"
+              />
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="trusaloons_modal"
+                tabindex="-1"
+                aria-labelledby="trusaloons_modal_Label"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="trusaloons_modal_Label">
+                        <a href="https://trusalon.in/" target="_blank"
+                          >Click Here To Visit</a
+                        >
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="../myresume/assets/img/Portfolio/Full Screen/trusaloon.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-4">
+              <!-- Button trigger modal -->
+              <img
+                src="../myresume/assets/img/Portfolio/sunnylea_homes.JPG"
+                alt="Launch Modal"
+                class="portfolio_manage img-fluid"
+                data-toggle="modal"
+                data-target="#sunnylea_modal"
+              />
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="sunnylea_modal"
+                tabindex="-1"
+                aria-labelledby="sunnylea_modal_Label"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="sunnylea_modal_Label">
+                        <a href="https://sunnyleahomes.ca/" target="_blank"
+                          >Click Here To Visit</a
+                        >
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="../myresume/assets/img/Portfolio/Full Screen/sunnylea_homes.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-4">
+              <!-- Button trigger modal -->
+              <img
+                src="../myresume/assets/img/Portfolio/nissin_be.JPG"
+                alt="Launch Modal"
+                class="portfolio_manage img-fluid"
+                data-toggle="modal"
+                data-target="#nissin_modal"
+              />
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="nissin_modal"
+                tabindex="-1"
+                aria-labelledby="nissin_modal_Label"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="nissin_modal_Label">
+                        <a href="https://www.nissin.be/" target="_blank"
+                          >Click Here To Visit</a
+                        >
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="../myresume/assets/img/Portfolio/Full Screen/nissin_be.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-4">
+              <!-- Button trigger modal -->
+              <img
+                src="../myresume/assets/img/Portfolio/healthcare.JPG"
+                alt="Launch Modal"
+                class="portfolio_manage img-fluid"
+                data-toggle="modal"
+                data-target="#healthcare_modal"
+              />
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="healthcare_modal"
+                tabindex="-1"
+                aria-labelledby="healthcare_modal_Label"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="healthcare_modal_Label">
+                        <a
+                          href="https://healthcare-marketing.vidushiinfotech.com/"
+                          target="_blank"
+                          >Click Here To Visit</a
+                        >
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="../myresume/assets/img/Portfolio/Full Screen/heathcare.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-4">
+              <!-- Button trigger modal -->
+              <img
+                src="../myresume/assets/img/Portfolio/airplus.JPG"
+                alt="Launch Modal"
+                class="portfolio_manage img-fluid"
+                data-toggle="modal"
+                data-target="#airplus_modal"
+              />
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="airplus_modal"
+                tabindex="-1"
+                aria-labelledby="airplus_modal_Label"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="airplus_modal_Label">
+                        <a href="https://www.airplus.be/" target="_blank"
+                          >Click Here To Visit</a
+                        >
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="../myresume/assets/img/Portfolio/Full Screen/air_plus.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-plugin"
+          role="tabpanel"
+          aria-labelledby="pills-plugin-tab"
+        >
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-4">
+              <!-- Button trigger modal -->
+              <img
+                src="../myresume/assets/img/Portfolio/header_footer.jpeg"
+                alt="Launch Modal"
+                class="portfolio_manage img-fluid"
+                data-toggle="modal"
+                data-target="#header_footer_modal"
+              />
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="header_footer_modal"
+                tabindex="-1"
+                aria-labelledby="header_footer_modal_Label"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="header_footer_modal_Label">
+                        <a
+                          href="https://github.com/sujoysenmyself/header-footer-insertion-wordpress-plugin/tree/dev-master?tab=readme-ov-file"
+                          target="_blank"
+                          >Click Here To Visit</a
+                        >
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="../myresume/assets/img/Portfolio/Full Screen/header_footer_plugin.jpeg"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-4">
+              <!-- Button trigger modal -->
+              <img
+                src="../myresume/assets/img/Portfolio/social_media_float.jpeg"
+                alt="Launch Modal"
+                class="portfolio_manage img-fluid"
+                data-toggle="modal"
+                data-target="#social_media_float_modal"
+              />
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="social_media_float_modal"
+                tabindex="-1"
+                aria-labelledby="social_media_float_modal_Label"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5
+                        class="modal-title"
+                        id="social_media_float_modal_Label"
+                      >
+                        <a
+                          href="https://github.com/sujoysenmyself/wordpress_plugin_social_media_icon_float?tab=readme-ov-file"
+                          target="_blank"
+                          >Click Here To Visit</a
+                        >
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="../myresume/assets/img/Portfolio/Full Screen/social_media_float.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-analytics"
+          role="tabpanel"
+          aria-labelledby="pills-analytics-tab"
+        >
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-4">
+              <!-- Button trigger modal -->
+              <img
+                src="../myresume/assets/img/Portfolio/power_bi.png"
+                alt="Launch Modal"
+                class="portfolio_manage img-fluid"
+                data-toggle="modal"
+                data-target="#power_bi_modal"
+              />
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="power_bi_modal"
+                tabindex="-1"
+                aria-labelledby="power_bi_modal_Label"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="power_bi_modal_Label">
+                        <a
+                          href="https://github.com/sujoysenmyself/power_bi_HR_Analytics?tab=readme-ov-file"
+                          target="_blank"
+                          >Click Here To Visit</a
+                        >
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="../myresume/assets/img/Portfolio/Full Screen/power_bi_full.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-4">
+              <!-- Button trigger modal -->
+              <img
+                src="../myresume/assets/img/Portfolio/pandas.png"
+                alt="Launch Modal"
+                class="portfolio_manage img-fluid"
+                data-toggle="modal"
+                data-target="#pandas_modal"
+              />
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="pandas_modal"
+                tabindex="-1"
+                aria-labelledby="pandas_modal_Label"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="pandas_modal_Label">
+                        <a
+                          href="https://github.com/sujoysenmyself/Hotel_Booking_Data_Analysis_By_Pandas?tab=readme-ov-file"
+                          target="_blank"
+                          >Click Here To Visit</a
+                        >
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="../myresume/assets/img/Portfolio/Full Screen/pandas_full.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-uiux"
+          role="tabpanel"
+          aria-labelledby="pills-uiux-tab"
+        >
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-4">
+              <!-- Button trigger modal -->
+              <img
+                src="../myresume/assets/img/Portfolio/business_card_1.png"
+                alt="Launch Modal"
+                class="portfolio_manage img-fluid"
+                data-toggle="modal"
+                data-target="#business_card_1_modal"
+              />
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="business_card_1_modal"
+                tabindex="-1"
+                aria-labelledby="business_card_1_modal_Label"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="business_card_1_modal_Label">
+                        <a
+                          href="./assets/img/Portfolio/Full Screen/business_card_1.png"
+                          target="_blank"
+                          >Click Here To Visit</a
+                        >
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="../myresume/assets/img/Portfolio/Full Screen/business_card_1.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-4">
+              <!-- Button trigger modal -->
+              <img
+                src="../myresume/assets/img/Portfolio/business_card_2.png"
+                alt="Launch Modal"
+                class="portfolio_manage img-fluid"
+                data-toggle="modal"
+                data-target="#business_card_2_modal"
+              />
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="business_card_2_modal"
+                tabindex="-1"
+                aria-labelledby="business_card_2_modal_Label"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="business_card_2_modal_Label">
+                        <a
+                          href="./assets/img/Portfolio/Full Screen/business_card_2.jpg"
+                          target="_blank"
+                          >Click Here To Visit</a
+                        >
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="../myresume/assets/img/Portfolio/Full Screen/business_card_2.jpg"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-case-study"
+          role="tabpanel"
+          aria-labelledby="pills-case-study-tab"
+        >
+          <div class="row">
+            <div class="col-12 col-md-3 col-lg-3">
+              <p class="case_study_sub_head text-center">Website Development</p>
+              <img
+                src="../myresume/assets/img/case_study/Website_Development_Case_Study.png"
+                class="img-fluid"
+              />
+              <div class="d-flex justify-content-center mt-3">
+                <a
+                  href="../myresume/assets/case_study_all/Website_Development.pdf"
+                  target="_blank"
+                  download
+                  class="btn btn-primary case_study_button_space"
+                >
+                  Download
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3">
+              <p class="case_study_sub_head text-center">SEO Strategy</p>
+              <img
+                src="../myresume/assets/img/case_study/SEO_Strategy_Case_Study.png"
+                class="img-fluid"
+              />
+              <div class="d-flex justify-content-center mt-3">
+                <a
+                  href="../myresume/assets/case_study_all/SEO_Strategy.pdf"
+                  target="_blank"
+                  download
+                  class="btn btn-primary case_study_button_space"
+                >
+                  Download
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3">
+              <p class="case_study_sub_head text-center">Client Colaboration</p>
+              <img
+                src="../myresume/assets/img/case_study/Client_Colaboration_Case_Study.png"
+                class="img-fluid"
+              />
+              <div class="d-flex justify-content-center mt-3">
+                <a
+                  href="../myresume/assets/case_study_all/Client_Colaboration.pdf"
+                  target="_blank"
+                  download
+                  class="btn btn-primary case_study_button_space"
+                >
+                  Download
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3">
+              <p class="case_study_sub_head text-center">Data Analytics Insights</p>
+              <img
+                src="../myresume/assets/img/case_study/Data_Analytics_Insights_Case_Study.png"
+                class="img-fluid"
+              />
+              <div class="d-flex justify-content-center mt-3">
+                <a
+                  href="../myresume/assets/case_study_all/Data_Analytics_Insights.pdf"
+                  target="_blank"
+                  download
+                  class="btn btn-primary"
+                >
+                  Download
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
