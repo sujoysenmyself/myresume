@@ -1343,7 +1343,6 @@ section#footer {
   position: absolute;
   bottom: 0;
   right: 0;
-  border: 1px solid #;
   width: 10rem;
   height: 10rem;
   transition: all 0.3s ease;
@@ -1767,6 +1766,35 @@ img.sujoy_logo {
 }
 
 
+
+
+/*--------------------------------------------------------------
+# Contact Form
+--------------------------------------------------------------*/
+
+@media (min-width: 1367px) {
+  iframe#myIframe {
+  height:650px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1366px) {
+  iframe#myIframe {
+  height:650px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  iframe#myIframe {
+  height:760px;
+  }   
+}
+
+@media (max-width: 767px) {
+  iframe#myIframe {
+  height:800px;
+  }
+}
 
 
 
