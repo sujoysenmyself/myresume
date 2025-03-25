@@ -1737,6 +1737,12 @@ span.details_link a{
   width: 50%;
 }
 
+@media (min-width: 1367px) {
+  .logo-container {
+      width:65%;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .logo-container {
     left: 10px;
