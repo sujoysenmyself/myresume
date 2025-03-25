@@ -319,7 +319,7 @@ p.text-light{
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
@@ -404,27 +404,33 @@ section {
   cursor: pointer;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  #customAlert {
+    width:90%;
+  }
+}
+
 /* Mobile style popup box */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 #customAlert {
   width:300px;
   }
 }
 
 /* Hide for mobile, tablet and desktop */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .hide-on-mobile {
     display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .for_desktop_tablet {
     display: none !important;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 767px) {
 .for_mobile {
   display: none !important;
   }
@@ -1194,7 +1200,7 @@ img.portfolio_manage.img-fluid {
   content: "/";
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .breadcrumbs .d-flex {
     display: block !important;
   }
@@ -1493,7 +1499,7 @@ p.case_study_sub_head {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 .case_study_button_space {
   margin-bottom: 50px; 
   }
@@ -1707,13 +1713,13 @@ span.details_link a{
 
 
 /* Navbar Button */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   button.btn.btn-success.navbar_button_download.button-margin {
     margin: 0px;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   button.btn.btn-success.navbar_button_download.button-margin {
     margin-left: 10px;
   }
