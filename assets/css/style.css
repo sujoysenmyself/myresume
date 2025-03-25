@@ -1486,9 +1486,16 @@ p.case_study_sub_head {
   color: white;
 }
 
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .case_study_button_space_tablet {
+    margin-bottom: 40px; 
+    }
+}
+
 @media (max-width: 768px) {
 .case_study_button_space {
-  margin-bottom: 50px; /* Adjust the value as needed */
+  margin-bottom: 50px; 
   }
 }
 
