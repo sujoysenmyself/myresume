@@ -3424,10 +3424,10 @@
           <div class="row">
             <!-- For desktop and tablet, this text will be aligned to the left -->
             <div class="col-12 col-md-6 text-center text-md-start">
-              <span class="text-light"
-                >Sujoy Sen © <span id="year"></span>. All Rights Reserved.</span
-              >
-            </div>
+  <span class="text-light">
+    Sujoy Sen © <span id="datetime"></span> | <span id="location"></span>. All Rights Reserved.
+  </span>
+</div>
             <!-- For desktop and tablet, this text will be aligned to the right -->
             <div class="col-12 col-md-6 text-center text-md-end">
               <a
@@ -3493,11 +3493,56 @@
     </script>
 
     <!-- JavaScript to set the current year -->
-    <script>
-      // Ensure the script waits until the document is fully loaded
-      document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById("year").textContent = new Date().getFullYear();
-      });
-    </script>
+   <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  // Date + Time
+  function updateDateTime() {
+    const now = new Date();
+
+    const options = {
+      day: '2-digit',
+      month: 'short',
+      year: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit'
+    };
+
+    document.getElementById("datetime").textContent =
+      now.toLocaleString(undefined, options);
+  }
+
+  updateDateTime();
+  setInterval(updateDateTime, 1000);
+
+  // Location
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(async function(position) {
+      const lat = position.coords.latitude;
+      const lon = position.coords.longitude;
+
+      try {
+        const res = await fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json`);
+        const data = await res.json();
+
+        const city = data.address.city || data.address.town || data.address.village || "";
+        const country = data.address.country || "";
+
+        document.getElementById("location").textContent = city + ", " + country;
+
+      } catch {
+        document.getElementById("location").textContent = "Location unavailable";
+      }
+
+    }, function() {
+      document.getElementById("location").textContent = "Location denied";
+    });
+  } else {
+    document.getElementById("location").textContent = "Not supported";
+  }
+
+});
+</script>
   </body>
 </html>
