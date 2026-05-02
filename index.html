@@ -3496,7 +3496,6 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-  // Date + Time
   function updateDateTime() {
     const now = new Date();
 
@@ -3516,12 +3515,12 @@ document.addEventListener("DOMContentLoaded", function () {
   updateDateTime();
   setInterval(updateDateTime, 1000);
 
-  // Location without permission (IP based)
-  fetch("https://ipapi.co/json/")
+  // Location using ipinfo
+  fetch("https://ipinfo.io/json?token=YOUR_TOKEN")
     .then(res => res.json())
     .then(data => {
       const city = data.city || "";
-      const country = data.country_name || "";
+      const country = data.country || "";
       document.getElementById("location").textContent = city + ", " + country;
     })
     .catch(() => {
