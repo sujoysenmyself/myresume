@@ -3492,8 +3492,8 @@
       }
     </script>
 
-    <!-- JavaScript to set the current year -->
-   <script>
+    <!-- JavaScript to set the current year, time, location -->
+<script>
 document.addEventListener("DOMContentLoaded", function () {
 
   // Date + Time
@@ -3516,31 +3516,17 @@ document.addEventListener("DOMContentLoaded", function () {
   updateDateTime();
   setInterval(updateDateTime, 1000);
 
-  // Location
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(async function(position) {
-      const lat = position.coords.latitude;
-      const lon = position.coords.longitude;
-
-      try {
-        const res = await fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json`);
-        const data = await res.json();
-
-        const city = data.address.city || data.address.town || data.address.village || "";
-        const country = data.address.country || "";
-
-        document.getElementById("location").textContent = city + ", " + country;
-
-      } catch {
-        document.getElementById("location").textContent = "Location unavailable";
-      }
-
-    }, function() {
-      document.getElementById("location").textContent = "Location denied";
+  // Location without permission (IP based)
+  fetch("https://ipapi.co/json/")
+    .then(res => res.json())
+    .then(data => {
+      const city = data.city || "";
+      const country = data.country_name || "";
+      document.getElementById("location").textContent = city + ", " + country;
+    })
+    .catch(() => {
+      document.getElementById("location").textContent = "Location unavailable";
     });
-  } else {
-    document.getElementById("location").textContent = "Not supported";
-  }
 
 });
 </script>
