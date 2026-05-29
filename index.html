@@ -3406,13 +3406,63 @@
               </div>
             </div>
 
-            <div class="col-lg-7 d-flex align-items-stretch">
-              <div class="info">
-                <div class="address">
-                 
-                </div>
-              </div>
-            </div>
+<div class="col-lg-7 d-flex align-items-stretch">
+  <form id="contactForm" class="php-email-form w-100 p-4 bg-white">
+
+    <div class="row">
+      <div class="form-group col-md-6">
+        <label>Your Name</label>
+        <input
+          type="text"
+          name="your-name"
+          class="form-control"
+          required
+        />
+      </div>
+
+      <div class="form-group col-md-6">
+        <label>Your Email</label>
+        <input
+          type="email"
+          class="form-control"
+          name="your-email"
+          required
+        />
+      </div>
+    </div>
+
+    <div class="form-group mt-3">
+      <label>Subject</label>
+      <input
+        type="text"
+        class="form-control"
+        name="your-subject"
+        required
+      />
+    </div>
+
+    <div class="form-group mt-3">
+      <label>Message</label>
+      <textarea
+        class="form-control"
+        name="your-message"
+        rows="10"
+        required
+      ></textarea>
+    </div>
+
+    <div class="my-3">
+      <div id="form-message"></div>
+    </div>
+
+    <div class="text-center mt-3">
+      <button type="submit" class="btn btn-primary">
+        Send Message
+      </button>
+    </div>
+
+  </form>
+</div>
           </div>
         </div>
       </section>
@@ -3491,6 +3541,80 @@
         document.getElementById("customAlert").style.display = "none";
       }
     </script>
+
+    <!-- JavaScreipt for contact form -->
+    <script>
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", async function (e) {
+
+    e.preventDefault();
+
+    const form = e.target;
+
+    const formData = new FormData();
+
+    // Required Contact Form 7 fields
+    formData.append("_wpcf7", "6");
+    formData.append("_wpcf7_version", "6.1.2");
+    formData.append("_wpcf7_locale", "en_US");
+    formData.append("_wpcf7_unit_tag", "wpcf7-f6-o1");
+    formData.append("_wpcf7_container_post", "0");
+    formData.append("_wpcf7_posted_data_hash", "");
+
+    // Your form fields
+    formData.append("your-name", form["your-name"].value);
+    formData.append("your-email", form["your-email"].value);
+    formData.append("your-subject", form["your-subject"].value);
+    formData.append("your-message", form["your-message"].value);
+
+    const messageBox = document.getElementById("form-message");
+
+    messageBox.innerHTML = "Sending...";
+
+    try {
+
+      const response = await fetch(
+        "https://sujoybackendportfolio.vedanectarspark.com/wp-json/contact-form-7/v1/contact-forms/6/feedback",
+        {
+          method: "POST",
+          body: formData
+        }
+      );
+
+      const result = await response.json();
+
+      console.log(result);
+
+      if (result.status === "mail_sent") {
+
+        messageBox.innerHTML =
+          "<span style='color:green;'>Message sent successfully.</span>";
+
+        form.reset();
+
+      } else {
+
+        messageBox.innerHTML =
+          "<span style='color:red;'>" +
+          result.message +
+          "</span>";
+
+      }
+
+    } catch (error) {
+
+      console.error(error);
+
+      messageBox.innerHTML =
+        "<span style='color:red;'>Network/CORS Error</span>";
+
+    }
+
+  });
+</script>
+
+
 
     <!-- JavaScript to set the current year, time, location -->
 <script>
