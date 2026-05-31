@@ -1823,8 +1823,16 @@ img.sujoy_logo {
     z-index: 9998;
 }
 
+
 .modal-100 {
-    max-width: 100%;
+    max-width: 90%;
+}
+
+
+@media (max-width: 1024px) {
+  .modal-100 {
+      max-width: 100%;
+  }
 }
 
 .modal-100 .modal-body {
