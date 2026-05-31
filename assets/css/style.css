@@ -1815,6 +1815,34 @@ img.sujoy_logo {
   }
 }
 
+.modal {
+    z-index: 9999;
+}
+
+.modal-backdrop {
+    z-index: 9998;
+}
+
+.modal-90 {
+    max-width: 90%;
+}
+
+.modal-90 .modal-body {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.column-scroll{
+    height: 70vh;      /* adjust as needed */
+    overflow-y: auto;
+}
+
+.column-scroll{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
 
 
 
